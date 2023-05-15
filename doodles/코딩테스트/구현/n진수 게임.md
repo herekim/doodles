@@ -1,4 +1,4 @@
-문제: [2018 KAKAO BLIND RECRUITMENT](https://school.programmers.co.kr/learn/courses/30/lessons/17687)
+문제: [2018 KAKAO BLIND RECRUITMENT](https://school.programmers.co.kr/learn/courses/30/lessons/17687)  
 소요시간: 55분
 
 # 풀이 계획
