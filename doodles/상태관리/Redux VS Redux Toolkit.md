@@ -1,4 +1,4 @@
-Redux Toolkit은 Redux 코드에서 여러 번 반복되는 부분을 줄여주고, 코드를 더 간결하게 만들어줍니다. 액션 타입과 액션 생성자를 별도로 만들 필요 없이 `createSlice`를 사용해서 한 번에 만들 수 있습니다. 또한, `configureStore`를 사용해서 Redux 개발자 도구와 미들웨어를 쉽게 설정할 수 있습니다.
+Redux Toolkit은 Redux 코드에서 여러 번 반복되는 부분을 줄여주고, 코드를 더 간결하게 만들어줍니다. 액션 타입과 액션 생성자를 별도로 만들 필요 없이 `createSlice`를 사용해서 한 번에 만들 수 있습니다. 또한 `configureStore`를 사용해서 Redux 개발자 도구와 미들웨어를 쉽게 설정할 수 있습니다.
 ## Redux
 먼저, Redux를 사용해서 만드는 경우입니다.
 ### actions/counterActions.js
