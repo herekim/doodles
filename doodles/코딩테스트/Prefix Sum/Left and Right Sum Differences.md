@@ -39,5 +39,6 @@ var leftRightDifference = function(nums) {
 # 예상 유형
 - 누적합
 # 시간 복잡도
-ㅒ
+O(n)
 # 새롭게 알게된 것
+- 누적합 개념을 사용하면 for문 내에서 reduce를 사용한다던가, 이중 for문을 도는 상황에서 적합할듯 하다.
