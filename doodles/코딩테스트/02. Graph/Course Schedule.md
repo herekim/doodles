@@ -1,7 +1,7 @@
 2023-06-08
 16:06
 
-해결 여부: 다시 도전
+해결 여부: ❌
 문제: [207. Course Schedule](https://leetcode.com/problems/course-schedule/description/)
 소요시간: 36m
 
