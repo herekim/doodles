@@ -29,7 +29,7 @@ var pivotInteger = function(n) {
     }
     
     return -1
-};
+}
 ```
 # 예상 유형
 누적합
