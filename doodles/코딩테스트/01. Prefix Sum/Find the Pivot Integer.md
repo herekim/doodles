@@ -10,7 +10,7 @@
 2. prefixSum, pivotSum이 같다면 prefixSum 반환한다.
 3. for문을 2부터 돌면서 prefixSum에 j를 추가하고, pivotSum에 j-1을 제거하는 작업을 반복한다.
 4. for문을 돌다가 prefixSum === pivotSum이 되는 순간 j를 반환한다.
-5. 만약 for문을 다 돌 때까지 값이 없다면 -1을 반환한다.
+5. 만약 for문을 다 돌 때까지 값이 없다면 -1을 반환한다
 # 풀이 코드 
 ```javascript
 var pivotInteger = function(n) {
