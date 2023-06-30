@@ -16,7 +16,6 @@
 - Redux Toolkit은 Pure Redux의 다양한 보일러 플레이트를 제거하고, 보다 간단한 API를 제공해서 사용자의 실수를 줄일 수 있다. 대표적으로 configureStore, createSlice API가 있다.
 - configureStore는 한 번의 호출로 Redux 스토어를 설정한다. 이 곳에서 리듀서를 결합하고, 미들웨어를 추가하고, DevTools를 통합할 수 있다.
 - createSlice는 액션 생성자 함수를 자동으로 생성하고, 리듀서 이름에 기반해 내부적으로 액션 타입 문자열을 생성한다. 또한 내부에서는 Immer 라이브러리를 사용하고 있어서, Mutating 하게 상태를 변경해도 불변성을 지켜준다.
-### Redux Toolkit은 Redux의 어떤 문제를 해결하는가?
 ## 핵심 컨셉
 ## 학습 리소스
 # 튜토리얼
