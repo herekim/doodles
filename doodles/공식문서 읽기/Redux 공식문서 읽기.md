@@ -36,4 +36,59 @@
 - 코드를 여러 개에 분산하지 않고 단일 파일에 작성한다.
 - TS 지원이 우수하고, 높은 타입 안정성의 API를 제공한다.
 - RTK Query를 사용해서 데이터를 패칭하고 로딩 상태를 추적하는 데에 필요한 thunks, 리듀서, 액션 생성자 또는 이펙트 훅을 작성하지 않아도 된다.
+
+## 핵심 컨셉
+- Todo 리스트 전역 상태
+```ts
+{
+  todos: [{
+    text: 'Eat food',
+    completed: true
+  }, {
+    text: 'Exercise',
+    completed: false
+  }],
+  visibilityFilter: 'SHOW_COMPLETED'
+}
+```
+- 상태를 변경하는 액션
+```ts
+{ type: 'ADD_TODO', text: 'Go to swimming pool' }
+{ type: 'TOGGLE_TODO', index: 1 }
+{ type: 'SET_VISIBILITY_FILTER', filter: 'SHOW_ALL' }
+```
+- 액션에 따라 상태를 변경하는 리듀서 함수
+```ts
+function visibilityFilter(state = 'SHOW_ALL', action) {
+  if (action.type === 'SET_VISIBILITY_FILTER') {
+    return action.filter
+  } else {
+    return state
+  }
+}
+
+function todos(state = [], action) {
+  switch (action.type) {
+    case 'ADD_TODO':
+      return state.concat([{ text: action.text, completed: false }])
+    case 'TOGGLE_TODO':
+      return state.map((todo, index) =>
+        action.index === index
+          ? { text: todo.text, completed: !todo.completed }
+          : todo
+      )
+    default:
+      return state
+  }
+}
+
+function todoApp(state = {}, action) {
+  return {
+    todos: todos(state.todos, action),
+    visibilityFilter: visibilityFilter(state.visibilityFilter, action)
+  }
+}
+```
 # 튜토리얼
+## Redux 핵심
+## Redux 기반
